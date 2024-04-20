@@ -1,0 +1,165 @@
+/* Basic Reset */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Dark text color for better readability against light backgrounds */
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #9a244f; /* Using the darker 'Food Network red' for focus states */
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #9a244f; /* Consistent with other buttons but could also be adjusted for login specific color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc0000; /* A brighter red for hover effect on the submit button */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #00364a;
+    color: #791a3e;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #9a244f;  /* Food Network red */
+    margin: 0;
+    font-size: 24px;
+}
+
+  nav select {
+      padding: 8px 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      color: #666;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      appearance: none; /* Remove default system dropdown arrow */
+      position: relative;
+      transition: border-color 0.3s ease-in-out;
+  }
+
+  nav select:hover, nav select:focus {
+      border-color: #cc0000; /* Food Network red */
+      outline: none;
+  }
+
+  /* Custom dropdown arrow using pseudo-elements */
+  nav::after {
+      content: '\25BC';
+      font-size: 10px;
+      position: absolute;
+      right: 25px;
+      top: 35px;
+      color: #cc0000;
+      pointer-events: none; /* Prevent the arrow from being clickable */
+  }
+
+  main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #791a3e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #9a244f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003d73;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+    border-bottom: none;
+}

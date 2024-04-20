@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Aspexx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aspexx</h1>
+        <nav>
+            <select onchange="window.location.href=this.value;">
+                <option value="index.html" selected>Home</option>
+                <option value="saved.html">Saved Recipes</option>
+                <option value="tracking.html">Meal Tracking</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+        <h2>Discover Recipes Based On Your Ingredients</h2>
+        <form>
+            <input type="text" id="ingredients" placeholder="Enter ingredients...">
+            <button type="submit">Search Recipes</button>
+        </form>
+        <div>
+            <h3>Recipe That Might Interest You!</h3>
+            <ul>
+                <!-- Recipes will be loaded here -->
+            </ul>
+        </div>
+    </main>
+    <footer>
+        © 2024 Aspexx. All rights reserved.
+    </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
